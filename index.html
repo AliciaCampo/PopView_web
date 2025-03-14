@@ -7,6 +7,33 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="icon" href="./img/Logo.png" type="image/png" />
 </head>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const buttons = document.querySelectorAll('.accordion-btn');
+
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Cierra los otros desplegables
+                buttons.forEach(btn => {
+                    if (btn !== button) {
+                        btn.classList.remove('active');
+                        btn.nextElementSibling.style.display = 'none';
+                    }
+                });
+
+                // Abre o cierra el desplegable actual
+                button.classList.toggle('active');
+                const content = button.nextElementSibling;
+                if (content.style.display === 'block') {
+                    content.style.display = 'none';
+                } else {
+                    content.style.display = 'block';
+                }
+            });
+        });
+    });
+</script>
+
 <body>
     <header>
         <h1> Benvinguts a PopView</h1>
@@ -26,7 +53,45 @@
     </section>
     <section>
         <h2>Com fer servir l'app?</h2>
+        
+        <div class="accordion">
+            <button class="accordion-btn"> Usuaris</button>
+            <div class="accordion-content">
+                <p>De moment es treballa a l'aplicació amb un ID estatic 5. Per entrar l'usuari és user2131 i la seva contrasenya és pirineus. Estem treballant per poder fer servir tokens.
+                Podeu veure els usuaris creats des de l'API https://52.72.183.45/docs#/</p>
+                <p>Per poder modificar l'usuari, només cal clicar damunt del nom de l'usuari i hi haurà una nova pantalla. On es poden modificar les dades, edat, nom, correu i contrasenya.
+                I per descomptat, la imatge de perfil, gràcies a un AlertDialog que funciona com un carrusel ,
+                cada cop que l'usuari selecciona una imatge es guarda i s'actualitza a l'instant.</p>
+            </div>
+    
+            <button class="accordion-btn"> Llistes</button>
+            <div class="accordion-content">
+                <p>Podeu crear , eliminar i editar les llistes d'una manera molt dinàmica. Dins hi podràs afegir títols de pel·lícules.
+                     Si no voleu entrar en una llista per esborrar-la,
+                     es pot seleccionar durant uns segons i amb un diàleg de confirmació es podrà esborrar.</p>
+            </div>
+    
+            <button class="accordion-btn"> Títols</button>
+            <div class="accordion-content">
+                <p>Els títols són per totes les parts de la nostra app. Al rating es mostren els millors títols segons les categories. Si es clica qualsevol títol a qualsevol lloc,
+                     hi ha una nova pantalla on es pot veure tota la informació . Inclòs un fragment on poder afegir el títol i una llista directament, mitjançant uns botons. Per la càrrega de dades i comprovacions va una mica lent.
+                     Al vídeo es pot veure com funciona https://youtu.be/vBNs_Gj-GIs</p>
+            </div>
+    
+            <button class="accordion-btn"> Comentaris</button>
+            <div class="accordion-content">
+                <p>De moment es poden afegir comentaris i visualitzar-los. Per les grans dimensions que tenim no hem pogut de moment que es puguin editar i eliminar.
+                     Només mostra comentaris i els afegeix. Només deixa editar i eliminar els comentaris propis de lusuari.</p>
+            </div>
+    
+            <button class="accordion-btn">🔎 Buscar</button>
+            <div class="accordion-content">
+                <p>El cercador funciona de manera molt intuïtiva, mentre escrius surten tots els resultats que continguin el text.
+                     A l'esquerra hi ha uns filtres per millorar les cerques.</p>
+            </div>
+        </div>
     </section>
+    <br>    
     <footer>
         <p>&copy; 2025 - Creado por <strong>Alicia Campo Miron, Maria Manzano Roldan, Judith Mera Aráez</strong></p>
     </footer>
