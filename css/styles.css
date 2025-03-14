@@ -112,4 +112,33 @@ section h2 {
     color: #666;
     margin-top: 0.5rem;
 }
+/* Estilo para la sección de instrucciones */
+section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Estilo para los elementos de la lista */
+ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+/* Estilo para los enlaces */
+.link {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para los elementos en negrita */
+strong {
+    font-weight: bold;
+}
 
