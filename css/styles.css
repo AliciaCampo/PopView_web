@@ -36,7 +36,7 @@ footer {
 .accordion-btn {
     width: 100%;               /* Hace que los botones ocupen todo el ancho */
     padding: 1rem;             /* Añadimos un poco de espacio alrededor */
-    background-color: #4CAF50; /* Color de fondo del botón */
+    background-color: #A6003D; /* Color de fondo del botón */
     color: white;              /* Color del texto */
     border: none;              /* Sin borde */
     text-align: left;          /* El texto a la izquierda */
@@ -49,7 +49,7 @@ footer {
 }
 
 .accordion-btn:hover {
-    background-color: #45a049; /* Cambia el color al pasar el ratón */
+    background-color: #A6003D; /* Cambia el color al pasar el ratón */
 }
 
 .accordion-content {
@@ -62,7 +62,7 @@ footer {
 }
 
 .accordion-btn.active {
-    background-color: #367c39;   /* Cambia el fondo cuando está activo */
+    background-color: #A6003D;   /* Cambia el fondo cuando está activo */
 }
 
 .accordion-content p {
