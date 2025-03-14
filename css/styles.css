@@ -18,8 +18,9 @@ section {
 }
 
 footer {
+    margin-top: auto; /* Esto hace que el footer se mantenga pegado abajo */
+    background-color: #ddd;
     text-align: center;
     padding: 1rem;
-    background-color: #ddd;
-    margin-top: 2rem;
+    font-size: 14px;
 }
