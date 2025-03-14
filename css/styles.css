@@ -68,4 +68,48 @@ footer {
 .accordion-content p {
     margin: 0.5rem 0;            /* Espaciado dentro del contenido */
 }
+/* Estilo general para la sección de videos */
+section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Contenedor de los enlaces de los videos */
+.video-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Estilo para cada enlace de video */
+.video-link {
+    display: block;
+    padding: 1rem;
+    background-color: #f1f1f1;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-link:hover {
+    background-color: #e0e0e0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el título del video */
+.video-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #007BFF;
+}
+
+/* Descripción debajo de cada video */
+.video-description {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 0.5rem;
+}
 
