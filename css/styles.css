@@ -32,38 +32,40 @@ footer {
     padding: 1rem;
     font-size: 14px;
 }
+/* Estilos generales para el acordeón */
 .accordion-btn {
-    width: 100%;
-    padding: 1rem;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    text-align: left;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    outline: none;
+    width: 100%;               /* Hace que los botones ocupen todo el ancho */
+    padding: 1rem;             /* Añadimos un poco de espacio alrededor */
+    background-color: #4CAF50; /* Color de fondo del botón */
+    color: white;              /* Color del texto */
+    border: none;              /* Sin borde */
+    text-align: left;          /* El texto a la izquierda */
+    font-size: 1rem;           /* Tamaño de texto */
+    font-weight: bold;         /* Negrita */
+    cursor: pointer;          /* Cambia el cursor cuando está sobre el botón */
+    transition: background-color 0.3s ease; /* Efecto suave al pasar el ratón */
+    outline: none;             /* Quita el borde del botón cuando se selecciona */
+    margin-bottom: 5px;        /* Separa los botones unos de otros */
 }
 
 .accordion-btn:hover {
-    background-color: #45a049;
+    background-color: #45a049; /* Cambia el color al pasar el ratón */
 }
 
 .accordion-content {
-    padding: 0 1rem;
-    background-color: #f9f9f9;
-    display: none;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-    border: 1px solid #ddd;
-}
-
-.accordion-content p {
-    margin: 0.5rem 0;
+    padding: 0 1rem;             /* Relleno para el contenido */
+    background-color: #f9f9f9;   /* Fondo de color claro para el contenido */
+    display: none;               /* Oculta el contenido por defecto */
+    overflow: hidden;            /* Evita desbordamientos */
+    border: 1px solid #ddd;      /* Borde alrededor del contenido */
+    margin-bottom: 5px;          /* Separación entre los bloques de contenido */
 }
 
 .accordion-btn.active {
-    background-color: #367c39;
+    background-color: #367c39;   /* Cambia el fondo cuando está activo */
+}
+
+.accordion-content p {
+    margin: 0.5rem 0;            /* Espaciado dentro del contenido */
 }
 
