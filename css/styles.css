@@ -16,7 +16,7 @@ header {
     text-align: center;
 }
 header .logo {
-    width: 400px; /* Ajusta el tamaño según tu imagen */
+    width: 200px; /* Ajusta el tamaño según tu imagen */
     height: auto;
     margin-bottom: 10px;
 }
