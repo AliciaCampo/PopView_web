@@ -15,8 +15,7 @@ header {
     padding: 1rem;
     text-align: center;
 }
-header .logo {
-    width: 100px; /* Ajusta el tamaño según tu imagen */
+header .logo {/* Ajusta el tamaño según tu imagen */
     height: auto;
     margin-bottom: 10px;
 }
